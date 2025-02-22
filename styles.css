@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+@media (max-width: 600px) {
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Investment Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Investment Dashboard</h1>
+        <p>Track real-time stock recommendations, alerts, and market insights.</p>
+        
+        <h2>Stock Recommendations</h2>
+        <div style="overflow-x:auto;">
+            <table id="stockTable">
+                <tr>
+                    <th>Stock</th>
+                    <th>Current Price (USD)</th>
+                    <th>Target Entry Price</th>
+                    <th>Target Exit Price</th>
+                    <th>Expected Return (%)</th>
+                    <th>Stop-Loss Price</th>
+                    <th>Investment Horizon</th>
+                    <th>Buy Alert</th>
+                </tr>
+            </table>
+        </div>
+        
+        <h2>Performance Tracker</h2>
+        <div class="chart-container">
+            <canvas id="returnChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
